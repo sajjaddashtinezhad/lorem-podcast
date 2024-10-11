@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Peyda';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/PeydaWeb-Regular.woff2') format('woff2'),
+         url('../fonts/PeydaWeb-Regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Peyda';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/PeydaWeb-Bold.woff2') format('woff2'),
+         url('../fonts/PeydaWeb-Bold.woff') format('woff');
+  }

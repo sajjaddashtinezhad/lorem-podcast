@@ -19,7 +19,7 @@ import Seo from '../../components/seo'
 
     return (
         <main>
-        <div className="bg-zinc-900 font-peyda w-full h-screen p-6 md:p-16 flex flex-col md:justify-between" dir="rtl">
+        <div className="bg-zinc-900 font-peyda w-full h-svh md:h-screen p-6 md:p-16 flex flex-col md:justify-between" dir="rtl">
         <Header toggleMenu={toggleMenu} />
         <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
 

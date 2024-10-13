@@ -18,7 +18,7 @@ const IndexPage = () => {
 
   return (
     <main>
-      <div className="bg-zinc-900 font-peyda w-full h-screen p-6 md:p-16 flex flex-col justify-between" dir="rtl">
+      <div className="bg-zinc-900 font-peyda w-full h-svh md:h-screen h-s p-6 md:p-16 flex flex-col justify-between" dir="rtl">
       <Header toggleMenu={toggleMenu} />
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
 

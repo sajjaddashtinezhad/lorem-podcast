@@ -22,11 +22,17 @@ const IndexPage = () => {
       <Header toggleMenu={toggleMenu} />
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
 
-          <Scene />
+      <Scene />
+
+      <Link to="/episodes" className="md:hidden">
+        <span className="text-sm md:text-base bg-zinc-700 bg-opacity-30 backdrop-filter backdrop-blur-md flex justify-center items-center rounded-2xl px-5 md:px-12 py-4 hover:scale-[0.95] duration-200 font-peyda font-bold text-white">
+برای گوش دادن به پادکست کلیک کنید
+        </span>
+      </Link>
 
       <Footer />
       </div>
-      <div className="absolute bottom-16 md:bottom-28 w-full flex justify-center">
+      <div className="hidden absolute bottom-16 md:bottom-28 w-full md:flex justify-center">
       <Link to="/episodes">
         <span className="text-sm md:text-base bg-zinc-700 bg-opacity-30 backdrop-filter backdrop-blur-md flex justify-center items-center rounded-2xl px-5 md:px-12 py-4 hover:scale-[0.95] duration-200 font-peyda font-bold text-white">
 برای گوش دادن به پادکست کلیک کنید

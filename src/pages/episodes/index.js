@@ -18,7 +18,7 @@ const Episodes = ({ data }) => {
       <div className="bg-zinc-900 font-peyda w-full h-screen p-6 md:p-16 flex flex-col justify-between" dir="rtl">
       <Header toggleMenu={toggleMenu} />
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-scroll h-96 my-8 rounded-xl overflow-hidden'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-scroll md:h-96 my-8 rounded-xl overflow-hidden'>
             {
               data.allMdx.nodes
                 .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))

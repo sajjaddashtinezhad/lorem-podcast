@@ -19,7 +19,7 @@ import Seo from '../../components/seo'
 
     return (
         <main>
-        <div className="bg-zinc-900 font-peyda w-full h-screen p-6 md:p-16 flex flex-col justify-between" dir="rtl">
+        <div className="bg-zinc-900 font-peyda w-full h-screen p-6 md:p-16 flex flex-col md:justify-between" dir="rtl">
         <Header toggleMenu={toggleMenu} />
         <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
 
@@ -39,7 +39,7 @@ import Seo from '../../components/seo'
 
               <div className='w-full md:w-2/3 md:h-[200px] overflow-y-scroll px-8 py-8 rounded-xl overflow-hidden'>
 
-                <h1 className="font-bold text-3xl mb-2 text-white">{data.mdx.frontmatter.title}</h1>
+                <h1 className="font-bold text-xl md:text-3xl mb-2 text-white">{data.mdx.frontmatter.title}</h1>
                 <div className='text-white'>
                   {React.Children.map(children, child => {
                     if (React.isValidElement(child)) {

@@ -7,7 +7,7 @@ import Model from "../components/model";
 const ThreeD = () => {
 
     return (
-        <Canvas className='bg-zinc-900'>
+        <Canvas className='bg-zinc-900 !h-96 lg:h-auto'>
             <Model />
             <Text />
             <ambientLight intensity={0.5} />

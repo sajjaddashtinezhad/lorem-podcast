@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from 'gatsby';
+import LoremPodcast from "../images/lorempodcast.svg";
 
 const Header = ({ toggleMenu }) => {
   return (
     <header className="flex flex-row justify-between items-center">
       <Link to="/">
         <h1 className="text-white text-2xl">   
-          <b>لورم</b>
-          پادکست
+          <img src={LoremPodcast} alt="LoremPodcast Logo" className="w-32" />
         </h1>
       </Link>
     <button className="flex-col group" dir="ltr" onClick={toggleMenu}>

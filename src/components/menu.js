@@ -20,14 +20,14 @@ const Menu = ({ menuOpen, toggleMenu }) => {
             </Link>
           </li>
           <li className="py-4 hover:translate-x-1 duration-200">
-          <button>
-                معرفی کتاب
-            </button>
+          <Link to="/books">
+معرفی کتاب
+            </Link>
           </li>
           <li className="py-4 hover:translate-x-1 duration-200">
-          <button>
-                درباره‌ی ما
-            </button>
+          <Link to="/about">
+درباره‌ی ما
+            </Link>
           </li>
         </ul>
       </nav>

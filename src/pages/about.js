@@ -19,8 +19,8 @@ const About = () => {
       <div className="bg-zinc-900 font-peyda w-full h-svh md:h-screen p-6 md:p-16 flex flex-col justify-between" dir="rtl">
       <Header toggleMenu={toggleMenu} />
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
-      <div className='w-full flex flex-col md:flex-row gap-4 overflow-y-scroll md:h-96 my-8 rounded-xl overflow-hidden'>
-                    <div className='bg-zinc-700 bg-opacity-50 text-white rounded-xl w-full md:w-1/2 px-6 pt-6 pb-9 md:overflow-y-scroll'>
+      <div className='w-full flex flex-col xl:flex-row gap-4 overflow-y-scroll my-8 rounded-xl overflow-hidden'>
+                    <div className='bg-zinc-700 bg-opacity-50 text-white rounded-xl w-full xl:w-1/2 px-6 pt-6 pb-9 md:overflow-y-scroll'>
                         <div className='flex gap-2 md:gap-4 md:items-center mb-5 flex-col md:flex-row'>
                             <StaticImage
                                 alt="Bahare Nafari"
@@ -43,7 +43,7 @@ const About = () => {
                             صفحه‌ی اینستاگرام
                         </a>
                     </div>
-                    <div className='bg-zinc-700 bg-opacity-50 text-white rounded-xl w-full md:w-1/2 px-6 pt-6 pb-9 md:overflow-y-scroll'>
+                    <div className='bg-zinc-700 bg-opacity-50 text-white rounded-xl w-full xl:w-1/2 px-6 pt-6 pb-9 md:overflow-y-scroll'>
                         <div className='flex gap-2 md:gap-4 md:items-center mb-5 flex-col md:flex-row'>
                             <StaticImage
                                 alt="Sajjad Dashti"

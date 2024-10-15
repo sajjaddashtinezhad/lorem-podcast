@@ -21,7 +21,7 @@ const Episodes = ({ data }) => {
       <div className="bg-zinc-900 font-peyda w-full h-svh md:h-screen p-6 md:p-16 flex flex-col justify-between" dir="rtl">
       <Header toggleMenu={toggleMenu} />
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-scroll md:h-96 my-8 rounded-xl overflow-hidden'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full overflow-y-scroll my-8 rounded-xl overflow-hidden'>
             {
         data.allMdx.nodes
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
@@ -29,13 +29,13 @@ const Episodes = ({ data }) => {
           const image = getImage(node.frontmatter.hero_image);
           return (
             <article key={node.id} className="bg-zinc-700 bg-opacity-50 text-white rounded-xl flex flex-col justify-between w-full">
-              <div className='flex flex-col md:flex-row'>
+              <div className='flex flex-col md:flex-row md:h-full'>
                 <GatsbyImage
                   image={image}
                   alt={node.frontmatter.hero_image_alt}
                   className='h-full w-full md:w-1/3 object-cover rounded-tr-xl rounded-tl-xl md:rounded-tl-none md:rounded-tr-xl md:rounded-br-xl'
                 />
-                <div className='w-full md:w-2/3 px-6'>
+                <div className='w-full md:w-2/3 px-6 md:flex md:flex-col md:justify-between'>
                   <div className='py-6'>
                     <h2 className="text-xl md:text-2xl font-bold">{node.frontmatter.title}</h2>
                     <h3 className='font-bold mb-2'>نویسنده: {node.frontmatter.subtitle}</h3>
